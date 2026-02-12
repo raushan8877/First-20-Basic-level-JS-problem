@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Largest Number</title>
+    <script>
+        let a = prompt("Enter the first number:");
+        let b = prompt("Enter the second number:");
+        let c = prompt("Enter the third number:");
+        let largest, secondLargest;
+        if (a >= b && a >= c) {
+            largest = a;
+            secondLargest = (b >= c) ? b : c;
+        } else if (b >= a && b >= c) {
+            largest = b;
+            secondLargest = (a >= c) ? a : c;
+        } else {
+            largest = c;
+            secondLargest = (a >= b) ? a : b;
+        }
+        console.log("The second largest number is: " + secondLargest);
+    </script>
+</head>
+<body>
+    <h1>Second Largest Number</h1>
+</body>
+</html>
